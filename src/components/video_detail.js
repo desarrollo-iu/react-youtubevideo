@@ -22,4 +22,15 @@ const VideoDetail = ({video}) => {
   );
 };
 
+VideoDetail.propTypes={
+    video: React.PropTypes.shape({ 
+      id: React.PropTypes.isRequired,
+      snippet:React.PropTypes.shape({  
+        title:React.PropTypes.string,
+        description:React.PropTypes.string
+      })
+    })
+}
+
+
 export default VideoDetail;

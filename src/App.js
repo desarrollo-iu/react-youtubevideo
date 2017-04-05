@@ -18,4 +18,10 @@ const App = (props) => {
     );
 };
 
+App.propTypes={
+    onSearchTermChange: React.PropTypes.func.isRequired,
+    onVideoSelect: React.PropTypes.func.isRequired,
+    videos:React.PropTypes.array.isRequired
+}
+
 export default App;

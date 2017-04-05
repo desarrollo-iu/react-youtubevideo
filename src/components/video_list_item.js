@@ -18,4 +18,13 @@ const VideoListItem = ({video, onVideoSelect}) => {
   );
 };
 
+VideoListItem.propTypes={
+    video: React.PropTypes.shape({ 
+      snippet:React.PropTypes.shape({  
+        title:React.PropTypes.string
+      })
+    })
+}
+
+
 export default VideoListItem;

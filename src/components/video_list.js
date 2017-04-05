@@ -18,4 +18,9 @@ const VideoList = (props) => {
   );
 };
 
+VideoList.propTypes = { 
+  onVideoSelect: React.PropTypes.func.isRequired,
+  videos: React.PropTypes.array.isRequired 
+}
+
 export default VideoList;
